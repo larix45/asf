@@ -1,0 +1,12 @@
+ion-label {
+    --color:#3f33f3;
+}
+#bingoFieldBtn {
+    width: 22%;
+    font-size: smaller;
+}
+#losowaniebtn {
+    font-size: large;
+    width: max-content;
+    margin-bottom: 10%;
+}
