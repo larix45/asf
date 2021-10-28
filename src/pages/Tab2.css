@@ -2,8 +2,11 @@ ion-label {
     --color:#3f33f3;
 }
 #bingoFieldBtn {
-    width: 22%;
+    width: 23%;
     font-size: smaller;
+    word-wrap: break-all;
+    white-space: normal;
+    height: 80px;
 }
 #losowaniebtn {
     font-size: large;

@@ -11,10 +11,10 @@ const Tab2: React.FC = () => {
     let vars = ["Ataki na Bartka", "Wracając...", "Coś nie działa", "Rozpakowanie", "To wam na schemacie pokaże", "Referat", "Pytanie retoryczne"]
     //let vars = ["ad",2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
     vars = shuffle(vars)
-    ReactDOM.render(<><IonButton>  {vars[0]} </IonButton> <IonButton>  {vars[1]} </IonButton>  <IonButton>  {vars[2]} </IonButton> <IonButton>  {vars[3]} </IonButton></>, document.getElementById("firstRow"));
-    ReactDOM.render(<><IonButton>  {vars[4]} </IonButton> <IonButton>  {vars[5]} </IonButton>  <IonButton>  {vars[6]} </IonButton> <IonButton>  {vars[7]} </IonButton></>, document.getElementById("secondRow"));
-    ReactDOM.render(<><IonButton>  {vars[8]} </IonButton> <IonButton>  {vars[9]} </IonButton>  <IonButton>  {vars[10]} </IonButton> <IonButton>  {vars[11]} </IonButton></>, document.getElementById("thirdRow"));
-    ReactDOM.render(<><IonButton>  {vars[12]} </IonButton> <IonButton>  {vars[13]} </IonButton>  <IonButton>  {vars[14]} </IonButton> <IonButton>  {vars[15]} </IonButton></>, document.getElementById("forthRow"));
+    ReactDOM.render(<><IonButton id="bingoFieldBtn">  {vars[0]} </IonButton> <IonButton id="bingoFieldBtn">  {vars[1]} </IonButton>  <IonButton id="bingoFieldBtn">  {vars[2]} </IonButton> <IonButton id="bingoFieldBtn">  {vars[3]} </IonButton></>, document.getElementById("firstRow"));
+    ReactDOM.render(<><IonButton id="bingoFieldBtn">  {vars[4]} </IonButton> <IonButton id="bingoFieldBtn">  {vars[5]} </IonButton>  <IonButton id="bingoFieldBtn">  {vars[6]} </IonButton> <IonButton id="bingoFieldBtn">  {vars[7]} </IonButton></>, document.getElementById("secondRow"));
+    ReactDOM.render(<><IonButton id="bingoFieldBtn">  {vars[8]} </IonButton> <IonButton id="bingoFieldBtn">  {vars[9]} </IonButton>  <IonButton id="bingoFieldBtn">  {vars[10]} </IonButton> <IonButton id="bingoFieldBtn">  {vars[11]} </IonButton></>, document.getElementById("thirdRow"));
+    ReactDOM.render(<><IonButton id="bingoFieldBtn">  {vars[12]} </IonButton> <IonButton id="bingoFieldBtn">  {vars[13]} </IonButton>  <IonButton id="bingoFieldBtn">  {vars[14]} </IonButton> <IonButton id="bingoFieldBtn">  {vars[15]} </IonButton></>, document.getElementById("forthRow"));
   
   }
   return (
@@ -31,16 +31,18 @@ const Tab2: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <IonTabButton>
-          <IonGrid>
-            <IonRow id="firstRow">
-            </IonRow>
-            <IonRow id="secondRow">
-            </IonRow>
-            <IonRow id="thirdRow">
-            </IonRow>
-            <IonRow id="forthRow">
-            </IonRow>
-          </IonGrid>
+          <IonContent scrollX scrollY>
+              <IonGrid fixed>
+                <IonRow id="firstRow">
+                </IonRow>
+                <IonRow id="secondRow">
+                </IonRow>
+                <IonRow id="thirdRow">
+                </IonRow>
+                <IonRow id="forthRow">
+                </IonRow>
+              </IonGrid>
+          </IonContent>
           <IonButton onClick={randomize} id="losowaniebtn" color="danger">
           Losuj
           </IonButton>
