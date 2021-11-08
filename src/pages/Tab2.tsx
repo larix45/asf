@@ -27,10 +27,9 @@ const Tab2: React.FC = () => {
       <IonContent fullscreen scrollX scrollY>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Tab 2</IonTitle>
           </IonToolbar>
         </IonHeader>
-          <IonContent id="grid_content">
+            <div id="centerd-div">
               <IonGrid fixed>
                 <IonRow id="firstRow">
                 </IonRow>
@@ -41,7 +40,7 @@ const Tab2: React.FC = () => {
                 <IonRow id="forthRow">
                 </IonRow>
               </IonGrid>
-          </IonContent>
+            </div>
           <IonButton onClick={randomize} id="losowaniebtn" color="danger">
             Losuj
            </IonButton>
